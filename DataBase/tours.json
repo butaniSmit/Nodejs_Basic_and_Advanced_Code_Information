@@ -1,0 +1,148 @@
+[{
+  "_id": {
+    "$oid": "64a8fc71c3024f25e62932cc"
+  },
+  "name": "The Sea Explorer1",
+  "duration": 5,
+  "maxGroupSize": 15,
+  "difficulty": "medium",
+  "ratingsAverage": 4.8,
+  "ratingsQuantity": 23,
+  "price": 497,
+  "summary": "Exploring the jaw-dropping US east coast by foot and by boat",
+  "description": "Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\nIrure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+  "imageCover": "tour-2-cover.jpg",
+  "images": [
+    "tour-2-1.jpg",
+    "tour-2-2.jpg",
+    "tour-2-3.jpg"
+  ],
+  "createdAt": {
+    "$date": "2023-07-08T05:41:36.922Z"
+  },
+  "startDates": [
+    {
+      "$date": "2021-06-19T04:30:00.000Z"
+    },
+    {
+      "$date": "2021-07-20T04:30:00.000Z"
+    },
+    {
+      "$date": "2021-08-18T04:30:00.000Z"
+    }
+  ],
+  "secretTour": false,
+  "slug": "the-sea-explorer",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64a8fce1c3024f25e62932d7"
+  },
+  "name": "The Snow Adventurer",
+  "duration": 4,
+  "maxGroupSize": 10,
+  "difficulty": "difficult",
+  "ratingsAverage": 4.5,
+  "ratingsQuantity": 13,
+  "price": 997,
+  "summary": "Exciting adventure in the snow with snowboarding and skiing",
+  "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum!\nDolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, exercitation ullamco laboris nisi ut aliquip. Lorem ipsum dolor sit amet, consectetur adipisicing elit!",
+  "imageCover": "tour-3-cover.jpg",
+  "images": [
+    "tour-3-1.jpg",
+    "tour-3-2.jpg",
+    "tour-3-3.jpg"
+  ],
+  "createdAt": {
+    "$date": "2023-07-08T05:41:36.922Z"
+  },
+  "startDates": [
+    {
+      "$date": "2022-01-05T04:30:00.000Z"
+    },
+    {
+      "$date": "2022-02-12T04:30:00.000Z"
+    },
+    {
+      "$date": "2023-01-06T04:30:00.000Z"
+    }
+  ],
+  "secretTour": false,
+  "slug": "the-snow-adventurer",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64a8fcfac3024f25e62932d9"
+  },
+  "name": "The City Wanderer",
+  "duration": 9,
+  "maxGroupSize": 20,
+  "difficulty": "easy",
+  "ratingsAverage": 4.6,
+  "ratingsQuantity": 54,
+  "price": 1197,
+  "summary": "Living the life of Wanderlust in the US' most beatiful cities",
+  "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat lorem ipsum dolor sit amet.\nConsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat!",
+  "imageCover": "tour-4-cover.jpg",
+  "images": [
+    "tour-4-1.jpg",
+    "tour-4-2.jpg",
+    "tour-4-3.jpg"
+  ],
+  "createdAt": {
+    "$date": "2023-07-08T05:41:36.922Z"
+  },
+  "startDates": [
+    {
+      "$date": "2021-03-11T04:30:00.000Z"
+    },
+    {
+      "$date": "2021-05-02T04:30:00.000Z"
+    },
+    {
+      "$date": "2021-06-09T04:30:00.000Z"
+    }
+  ],
+  "secretTour": false,
+  "slug": "the-city-wanderer",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64a8fd1ac3024f25e62932dd"
+  },
+  "name": "The Park Camper",
+  "duration": 10,
+  "maxGroupSize": 15,
+  "difficulty": "medium",
+  "ratingsAverage": 4.9,
+  "ratingsQuantity": 19,
+  "price": 1497,
+  "summary": "Breathing in Nature in America's most spectacular National Parks",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum!",
+  "imageCover": "tour-5-cover.jpg",
+  "images": [
+    "tour-5-1.jpg",
+    "tour-5-2.jpg",
+    "tour-5-3.jpg"
+  ],
+  "createdAt": {
+    "$date": "2023-07-08T05:41:36.922Z"
+  },
+  "startDates": [
+    {
+      "$date": "2021-08-05T04:30:00.000Z"
+    },
+    {
+      "$date": "2022-03-20T04:30:00.000Z"
+    },
+    {
+      "$date": "2022-08-12T04:30:00.000Z"
+    }
+  ],
+  "secretTour": false,
+  "slug": "the-park-camper",
+  "__v": 0
+}]

@@ -1,0 +1,26 @@
+[{
+  "_id": {
+    "$oid": "64aa754b878899623e31f93c"
+  },
+  "name": "Raj",
+  "email": "raj@yopmail.com",
+  "photo": "default.jpg",
+  "role": "user",
+  "permissions": "64aa44e545b94ba6ab9a2d33",
+  "password": "$2a$12$twfVNiRvzrh9ttqcJRwk0uQOa6UHGJ11LUwMZt44ylQVxvzajwjjS",
+  "active": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64aa757f878899623e31f944"
+  },
+  "name": "Smit",
+  "email": "smit@yopmail.com",
+  "photo": "default.jpg",
+  "role": "admin",
+  "permissions": "64aa3d31ab49a6cfe4608f23",
+  "password": "$2a$12$mDKmq5.oUGS0kOmUOYD2.ecYuqIs8nFqDjRiQfY8KzltVUSUpKYtW",
+  "active": true,
+  "__v": 0
+}]

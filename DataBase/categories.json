@@ -1,0 +1,39 @@
+[{
+  "_id": {
+    "$oid": "64a91c65379ae6cc023b7d85"
+  },
+  "name": "Mobile",
+  "products": [
+    {
+      "$oid": "64a91ccd379ae6cc023b7d92"
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64a91c75379ae6cc023b7d89"
+  },
+  "name": "Smartphone",
+  "products": [
+    {
+      "$oid": "64a91ccd379ae6cc023b7d92"
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64a91c7d379ae6cc023b7d8d"
+  },
+  "name": "Electronics",
+  "products": [
+    {
+      "$oid": "64a91ccd379ae6cc023b7d92"
+    },
+    {
+      "$oid": "64a91cf1379ae6cc023b7d97"
+    }
+  ],
+  "__v": 0
+}]

@@ -1,0 +1,890 @@
+{
+	"info": {
+		"_postman_id": "0908bb79-0fd1-4816-bb5f-97efb1cc8011",
+		"name": "natours",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26802058"
+	},
+	"item": [
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Smit\",\r\n    \"email\":\"smit@yopmail.com\",\r\n    \"password\":\"abcd@1234\",\r\n    \"passwordConfirm\":\"abcd@1234\",\r\n    \"role\":\"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3100/api/v1/user/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3100",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"raj@yopmail.com\",\r\n    \"password\":\"abcd@1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3100/api/v1/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3100",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "forgotpassword",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YThlZmU4OWE0NWM3OWI0MDI1NWY0YyIsImlhdCI6MTY4ODc5MzE2MywiZXhwIjoxNjg4ODc5NTYzfQ.P2-Ep7uwxWzW1mDn5rmFyQoufn9ienQpq6gtHVs_lUg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"smit@yopmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3100/api/v1/user/forgotpassword",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3100",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"forgotpassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "resetpassword",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YThlZmU4OWE0NWM3OWI0MDI1NWY0YyIsImlhdCI6MTY4ODc5MzE2MywiZXhwIjoxNjg4ODc5NTYzfQ.P2-Ep7uwxWzW1mDn5rmFyQoufn9ienQpq6gtHVs_lUg",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3100/api/v1/user/resetpassword/217774ab99055c044f70f7f2a2662699fa274edf0ba776863e031a107c6198e7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3100",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"resetpassword",
+								"217774ab99055c044f70f7f2a2662699fa274edf0ba776863e031a107c6198e7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateMyPassword",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YThlZmU4OWE0NWM3OWI0MDI1NWY0YyIsImlhdCI6MTY4ODc5MzE2MywiZXhwIjoxNjg4ODc5NTYzfQ.P2-Ep7uwxWzW1mDn5rmFyQoufn9ienQpq6gtHVs_lUg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"password\":\"abcd@1234\",\r\n    \"passwordConfirm\":\"abcd@1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3100/api/v1/user/updateMyPassword",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3100",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"updateMyPassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getme",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YThlZmU4OWE0NWM3OWI0MDI1NWY0YyIsImlhdCI6MTY4ODc5MzE2MywiZXhwIjoxNjg4ODc5NTYzfQ.P2-Ep7uwxWzW1mDn5rmFyQoufn9ienQpq6gtHVs_lUg",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3100/api/v1/user/me",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3100",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateMe",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YWE2OWMyNzVlNzE2ZWQ0ODk0ZjRjYSIsImlhdCI6MTY4ODg4OTgyNSwiZXhwIjoxNjg4OTc2MjI1fQ.UQxIVo4nBbm-x-f5BvbCmfctr5XDBAa-LKLMUijGCTM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Raj Butani",
+									"type": "text"
+								},
+								{
+									"key": "photo",
+									"type": "file",
+									"src": "/C:/Users/DELL/OneDrive/Pictures/smit.jpg.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3100/api/v1/user/updateMe",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3100",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"updateMe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getusers",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YWE2OWMyNzVlNzE2ZWQ0ODk0ZjRjYSIsImlhdCI6MTY4ODg5MTk4MiwiZXhwIjoxNjg4OTc4MzgyfQ.WLb_sZYx4QWpHwd-Ic20qxNRe9RibJ99-MhGJ0LN8mU",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3100/api/v1/user/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3100",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edituser",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YWE2NTRkYmI2Zjg5NjkwZjViMzQ4MyIsImlhdCI6MTY4ODg4ODk2OSwiZXhwIjoxNjg4OTc1MzY5fQ.RiOkLWGt8bSxLCwCD3MbHGEM-YE8WK1H9vO22f2FV-o",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Raj Butani\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3100/api/v1/user/64aa654dbb6f89690f5b3483",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3100",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"64aa654dbb6f89690f5b3483"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteuser",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YThlZmU4OWE0NWM3OWI0MDI1NWY0YyIsImlhdCI6MTY4ODc5MzE2MywiZXhwIjoxNjg4ODc5NTYzfQ.P2-Ep7uwxWzW1mDn5rmFyQoufn9ienQpq6gtHVs_lUg",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3100/api/v1/user/64a90581379ae6cc023b7d5f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3100",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"64a90581379ae6cc023b7d5f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteMe",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YTkwM2M1OWE2ZWU3ZDAzYzhhZWE2MSIsImlhdCI6MTY4ODc5ODMwMSwiZXhwIjoxNjg4ODg0NzAxfQ.KvauAqJ6BHmyY8Jt7cup7GdzTttf0WUIpY3b5ObBhHA",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3100/api/v1/user/deleteMe",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3100",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"deleteMe"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "tours",
+			"item": [
+				{
+					"name": "getAllTour",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YWE3NTRiODc4ODk5NjIzZTMxZjkzYyIsImlhdCI6MTY4OTA0MjU1MiwiZXhwIjoxNjg5MTI4OTUyfQ.J-OaIBJAiTaXpBNojdGrU6FbOyFt6Yn27pOxSJn5I44",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3100/api/v1/tour/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3100",
+							"path": [
+								"api",
+								"v1",
+								"tour",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postTour",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"name\": \"The Park Camper\",\r\n        \"duration\": 10,\r\n        \"maxGroupSize\": 15,\r\n        \"difficulty\": \"medium\",\r\n        \"ratingsAverage\": 4.9,\r\n        \"ratingsQuantity\": 19,\r\n        \"price\": 1497,\r\n        \"summary\": \"Breathing in Nature in America's most spectacular National Parks\",\r\n        \"description\": \"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum!\",\r\n        \"imageCover\": \"tour-5-cover.jpg\",\r\n        \"images\": [\r\n            \"tour-5-1.jpg\",\r\n            \"tour-5-2.jpg\",\r\n            \"tour-5-3.jpg\"\r\n        ],\r\n        \"startDates\": [\r\n            \"2021-08-05,10:00\",\r\n            \"2022-03-20,10:00\",\r\n            \"2022-08-12,10:00\"\r\n        ]\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3100/api/v1/tour",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3100",
+							"path": [
+								"api",
+								"v1",
+								"tour"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getTour",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3100/api/v1/tour/64a8fc71c3024f25e62932cc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3100",
+							"path": [
+								"api",
+								"v1",
+								"tour",
+								"64a8fc71c3024f25e62932cc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editTour",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"name\": \"The Sea Explorer1\",\r\n            \"duration\": 5,\r\n            \"maxGroupSize\": 15,\r\n            \"difficulty\": \"medium\",\r\n            \"ratingsAverage\": 4.8,\r\n            \"ratingsQuantity\": 23,\r\n            \"price\": 497,\r\n            \"summary\": \"Exploring the jaw-dropping US east coast by foot and by boat\",\r\n            \"description\": \"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\\nIrure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\",\r\n            \"imageCover\": \"tour-2-cover.jpg\",\r\n            \"images\": [\r\n                \"tour-2-1.jpg\",\r\n                \"tour-2-2.jpg\",\r\n                \"tour-2-3.jpg\"\r\n            ],\r\n            \"startDates\": [\r\n                \"2021-06-19T04:30:00.000Z\",\r\n                \"2021-07-20T04:30:00.000Z\",\r\n                \"2021-08-18T04:30:00.000Z\"\r\n            ],\r\n            \"secretTour\": false,\r\n            \"slug\": \"the-sea-explorer\",\r\n            \"__v\": 0,\r\n            \"durationWeeks\": 1,\r\n            \"id\": \"64a8fcc2c3024f25e62932d3\"\r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3100/api/v1/tour/64a8fc71c3024f25e62932cc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3100",
+							"path": [
+								"api",
+								"v1",
+								"tour",
+								"64a8fc71c3024f25e62932cc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteTour",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0YWE3NTRiODc4ODk5NjIzZTMxZjkzYyIsImlhdCI6MTY4ODg5Mjc1NSwiZXhwIjoxNjg4OTc5MTU1fQ.cUKeo5dll_WH_n2ofEsKkd57ShDfn9_mvn9_AOqZp18",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3100/api/v1/tour/64a8fc71c3024f25e62932cc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3100",
+							"path": [
+								"api",
+								"v1",
+								"tour",
+								"64a8fc71c3024f25e62932cc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "top-5-cheap",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3100/api/v1/tour/top-5-cheap",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3100",
+							"path": [
+								"api",
+								"v1",
+								"tour",
+								"top-5-cheap"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "tour-stats",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3100/api/v1/tour/tour-stats",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3100",
+							"path": [
+								"api",
+								"v1",
+								"tour",
+								"tour-stats"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "monthly-plan/:year",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3100/api/v1/tour/monthly-plan/2021",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3100",
+							"path": [
+								"api",
+								"v1",
+								"tour",
+								"monthly-plan",
+								"2021"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Relationship",
+			"item": [
+				{
+					"name": "one to one relationship",
+					"item": [
+						{
+							"name": "getpublisher",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3100/api/v1/publisher",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3100",
+									"path": [
+										"api",
+										"v1",
+										"publisher"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "postpublisher",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Random Publishers\",\r\n            \"location\": \"Kigali, Rwanda\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3100/api/v1/publisher",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3100",
+									"path": [
+										"api",
+										"v1",
+										"publisher"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "postbook",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Mastering Mongoose with Javascript\",\r\n                    \"publishYear\": 2020,\r\n                    \"author\": \"Devangelist\",\r\n                    \"publisher\": \"64a91853379ae6cc023b7d77\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3100/api/v1/book",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3100",
+									"path": [
+										"api",
+										"v1",
+										"book"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "many to many relationship",
+					"item": [
+						{
+							"name": "get-product",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3100/api/v1/product",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3100",
+									"path": [
+										"api",
+										"v1",
+										"product"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "post-product",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Tv\",\r\n        \"price\": \"1200\",\r\n        \"categories\": [\"64a91c7d379ae6cc023b7d8d\"]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3100/api/v1/product",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3100",
+									"path": [
+										"api",
+										"v1",
+										"product"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get-category",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3100/api/v1/category",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3100",
+									"path": [
+										"api",
+										"v1",
+										"category"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "post-category",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"Electronics\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3100/api/v1/category",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3100",
+									"path": [
+										"api",
+										"v1",
+										"category"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Roles",
+			"item": [
+				{
+					"name": "add-role",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"allpermissions\":[\r\n        {\r\n            \"group\":\"Tours\",\r\n            \"permissionsname\":[\r\n                {\r\n                \"title\":\"Add Tour\",\r\n                \"name\":\"add-tour\"\r\n                },\r\n                {\r\n                \"title\":\"Edit Tour\",\r\n                \"name\":\"edit-tour\"\r\n                }\r\n            ]\r\n\r\n        }\r\n    ],\r\n    \"role\":\"Super Admin\",\r\n    \"permissions\":[\"add-tour\",\"view-tour\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3100/api/v1/roles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3100",
+							"path": [
+								"api",
+								"v1",
+								"roles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-role",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3100/api/v1/roles/64aa3f042c37b11dcf5ee631",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3100",
+							"path": [
+								"api",
+								"v1",
+								"roles",
+								"64aa3f042c37b11dcf5ee631"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-role",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3100/api/v1/roles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3100",
+							"path": [
+								"api",
+								"v1",
+								"roles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit-role",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"permissions\":[\"view-tour\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3100/api/v1/roles/64aa44e545b94ba6ab9a2d33",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3100",
+							"path": [
+								"api",
+								"v1",
+								"roles",
+								"64aa44e545b94ba6ab9a2d33"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,58 @@
+[{
+  "_id": {
+    "$oid": "64aa3d31ab49a6cfe4608f23"
+  },
+  "role": "admin",
+  "permissions": [
+    "add-tour",
+    "view-tour",
+    "delete-tour",
+    "edit-tour"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64aa44e545b94ba6ab9a2d33"
+  },
+  "role": "user",
+  "permissions": [
+    "view-tour"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64acc67a89bf07ca691a18b5"
+  },
+  "allpermissions": [
+    {
+      "group": "Tours",
+      "permissionsname": [
+        {
+          "title": "Add Tour",
+          "name": "add-tour",
+          "_id": {
+            "$oid": "64acc67a89bf07ca691a18b7"
+          }
+        },
+        {
+          "title": "Edit Tour",
+          "name": "edit-tour",
+          "_id": {
+            "$oid": "64acc67a89bf07ca691a18b8"
+          }
+        }
+      ],
+      "_id": {
+        "$oid": "64acc67a89bf07ca691a18b6"
+      }
+    }
+  ],
+  "role": "Super Admin",
+  "permissions": [
+    "add-tour",
+    "view-tour"
+  ],
+  "__v": 0
+}]

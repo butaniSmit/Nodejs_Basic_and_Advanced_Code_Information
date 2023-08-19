@@ -1,0 +1,32 @@
+[{
+  "_id": {
+    "$oid": "64a91ccd379ae6cc023b7d92"
+  },
+  "name": "iPhone 12",
+  "price": 1200,
+  "categories": [
+    {
+      "$oid": "64a91c65379ae6cc023b7d85"
+    },
+    {
+      "$oid": "64a91c75379ae6cc023b7d89"
+    },
+    {
+      "$oid": "64a91c7d379ae6cc023b7d8d"
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64a91cf1379ae6cc023b7d97"
+  },
+  "name": "Tv",
+  "price": 1200,
+  "categories": [
+    {
+      "$oid": "64a91c7d379ae6cc023b7d8d"
+    }
+  ],
+  "__v": 0
+}]
